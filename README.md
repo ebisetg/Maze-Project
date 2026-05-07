@@ -48,3 +48,4 @@ pip install -r requirements.txt
 python main.py
 
 ## Video Demo
+https://www.loom.com/share/71fd19987b91432ea69c2ca4f0ebc4be
