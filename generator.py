@@ -31,7 +31,7 @@ class MazeGenerator:
             self.current_cell = (chosen_r, chosen_c)
             self.visited.add(self.current_cell)
             
-            # BONUS: Create cycle by eating an EXTRA wall (only when W was pressed)
+            # BONUS
             if self.create_cycles and random.random() < CYCLE_PROBABILITY:
                 extra = random.choice(neighbors)
                 # Mark this wall as a cycle wall BEFORE removing it
