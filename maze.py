@@ -2,10 +2,7 @@ import numpy as np
 from config import ROWS, COLS
 
 class Maze:
-    """
-    Maze structure with northWall and eastWall arrays.
-    Phantom row 0 and col 0 for boundaries.
-    """
+   
     def __init__(self, rows=ROWS, cols=COLS):
         self.rows = rows
         self.cols = cols
@@ -14,7 +11,7 @@ class Maze:
         self.northWall = np.ones((rows + 1, cols + 1), dtype=int)
         self.eastWall = np.ones((rows + 1, cols + 1), dtype=int)
         
-        # Start and End cells (set later)
+        # Start and End cells 
         self.start_cell = None
         self.end_cell = None
         
@@ -65,7 +62,7 @@ class Maze:
         return True
     
     def create_openings(self):
-        """Create openings at start and end cells on the boundaries"""
+        
         if self.start_cell:
             r, c = self.start_cell
             if c == 1:
